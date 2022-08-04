@@ -1,0 +1,18 @@
+
+body {
+    overflow-y: hidden;
+}
+
+
+#ticket-cont {
+    height: 100vh !important;
+}
+
+#print {
+    height: 100vh !important;
+}
+
+button a {
+    text-decoration: none !important;
+    color: white;
+}

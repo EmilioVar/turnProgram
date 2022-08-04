@@ -1,32 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- alternate impression -->
+    <link rel="alternate" media="print" href="./ticket" />
     <!-- my style CSS -->
     <link rel="stylesheet" href="./style.css">
-    <!-- script TAILWIND -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
     <title>Turno</title>
 </head>
+
 <body>
-    <div class="container grid grid-cols-2 h-screen">
-        <div class="container">
-            <h1>botonera</h1>
-            <div class="m-10 grid grid-cols-2">
-                <button id="meat" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" value="añadir">añadir</button>
-                <span class="m-5">carne</span>
-            </div>
-            <div class="m-10 grid grid-cols-2">
-                <button id="fish" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" value="añadir">añadir</button>
-                <span class="m-5">Pescado</span>
-            </div>
-            <div class="m-10 grid grid-cols-2">
-                <button id="vegetable" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" value="añadir">añadir</button>
-                <span class="m-5">Verdura</span>
+    <!-- ticket generator -->
+    <div id="ticket-cont" class="container text-center d-flex justify-content-center flex-column">
+        <h1>SELECCIONE SU TURNO</h1>
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="my-3">
+                    <button id="meat" class="btn btn-primary" value="meat">
+                        <a class="fs-2" href="javascript:imprSelec('print')">añadir</a>
+                    </button>
+                    <span class="m-5">carne</span>
+                </div>
             </div>
         </div>
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="my-3">
+                        <button id="fish" class="btn btn-primary" value="fish">
+                            <a class="fs-2" href="javascript:imprSelec('print')">añadir</a>
+                        </button>
+                        <span class="m-5">Pescado</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="my-3">
+                        <button id="vegetable" class="btn btn-primary" value="vegetable">
+                            <a class="fs-2" href="javascript:imprSelec('print')">añadir</a>
+                        </button>
+                        <span class="m-5">Verdura</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- ticket preview -->
+        <div id="print" class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3 class="text-3xl">img-logo</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="categoryName"></h1>
+                    <p>tu turno es el </p>
+                    <h2 class="ticketNum text-5xl mt-3"></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="text-1xl""">gracias por venir</p>
+                </div>
+            </div>
+        </div>
+        <!-- Screen counter -->
         <div class="container">
             <h1>pantalla</h1>
             <div class="cont-turn">
@@ -37,4 +86,5 @@
 
     <script src="./javascript.js"></script>
 </body>
+
 </html>
