@@ -3,7 +3,7 @@
     overflow-y: hidden;
 } */
 
-
+/* Ticket */
 #ticket-cont {
     height: 100vh !important;
 }
@@ -17,4 +17,123 @@
 button a {
     text-decoration: none !important;
     color: white;
+}
+
+/* SCREEN NUMBER */
+
+#screenTicket {
+    height: 100vh;
+}
+
+#screenTicket h2 {
+    text-align: center;
+    font-size: 10em;
+}
+
+#screenTicket div {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* MEAT CONTAINER */
+
+#meat_cont {
+    position: relative;
+    overflow: hidden;
+}
+
+#meat_text {
+    position: relative;
+    z-index: 10;
+    background-color: white;
+    height: 300px;
+    width: 300px;
+    border: 2px solid white;
+}
+
+#meat_txt::before {
+    position: absolute;
+    content: "";
+    width: 95%;
+    height: 50%;
+    background-color: white;
+    opacity: .7;
+    z-index: -1;
+    border-radius: 25px;
+}
+
+.img_meat {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    filter: blur(2px);
+    z-index: -1;
+}
+
+/* FISH CONTAINER */
+
+#fish_cont {
+    position: relative;
+    overflow: hidden;
+}
+
+#fish_text {
+    position: relative;
+    z-index: 10;
+}
+
+#fish_txt::before {
+    position: absolute;
+    content: "";
+    width: 95%;
+    height: 50%;
+    background-color: white;
+    opacity: .7;
+    z-index: -1;
+    border-radius: 25px;
+}
+
+.img_fish {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    filter: blur(2px);
+    z-index: -1;
+}
+
+/* VEGETABLE CONTAINER*/
+
+#vegetable_cont {
+    position: relative;
+    overflow: hidden;
+}
+
+#vegetable_text {
+    position: relative;
+    z-index: 10;
+    background-color: white;
+    height: 300px;
+    width: 300px;
+    border: 2px solid white;
+}
+
+#vegetable_txt::before {
+    position: absolute;
+    content: "";
+    width: 95%;
+    height: 50%;
+    background-color: white;
+    opacity: .7;
+    z-index: -1;
+    border-radius: 25px;
+}
+
+.img_vegetable {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    filter: blur(2px);
+    z-index: -1;
 }

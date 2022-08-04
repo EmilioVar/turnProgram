@@ -21,10 +21,11 @@
 
 <body>
     <!-- ticket generator -->
-    <div id="ticket-cont" class="container text-center d-flex justify-content-center flex-column">
+    <div id="ticket-cont" class="container d-flex flex-column align-items-center">
         <h1>SELECCIONE SU TURNO</h1>
+        <!-- meat -->
         <div class="row">
-            <div class="col-12 d-flex justify-content-center">
+            <div class="col-12">
                 <div class="my-3">
                     <button id="meat" class="btn btn-primary" value="meat">
                         <a class="fs-2" href="javascript:imprSelec('print')">añadir</a>
@@ -33,67 +34,71 @@
                 </div>
             </div>
         </div>
-            <div class="row">
-                <div class="col-12 d-flex justify-content-center">
-                    <div class="my-3">
-                        <button id="fish" class="btn btn-primary" value="fish">
-                            <a class="fs-2" href="javascript:imprSelec('print')">añadir</a>
-                        </button>
-                        <span class="m-5">Pescado</span>
-                    </div>
+        <!-- fish -->
+        <div class="row">
+            <div class="col-12">
+                <div class="my-3">
+                    <button id="fish" class="btn btn-primary" value="fish">
+                        <a class="fs-2" href="javascript:imprSelec('print')">añadir</a>
+                    </button>
+                    <span class="m-5">Pescado</span>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 d-flex justify-content-center">
-                    <div class="my-3">
-                        <button id="vegetable" class="btn btn-primary" value="vegetable">
-                            <a class="fs-2" href="javascript:imprSelec('print')">añadir</a>
-                        </button>
-                        <span class="m-5">Verdura</span>
-                    </div>
+        </div>
+        <!-- vegetable -->
+        <div class="row">
+            <div class="col-12">
+                <div class="my-3">
+                    <button id="vegetable" class="btn btn-primary" value="vegetable">
+                        <a class="fs-2" href="javascript:imprSelec('print')">añadir</a>
+                    </button>
+                    <span class="m-5">Verdura</span>
                 </div>
             </div>
         </div>
     </div>
-        <!-- ticket preview -->
-        <div id="print" class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h3 class="text-3xl">img-logo</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h1 class="categoryName"></h1>
-                    <p>tu turno es el </p>
-                    <h2 class="ticketNum text-5xl mt-3"></h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 text-center">
-                    <p class="text-1xl""">gracias por venir</p>
-                </div>
+    <!-- ticket preview -->
+    <div id="print" class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3 class="text-3xl">img-logo</h3>
             </div>
         </div>
-        <!-- Screen counter -->
-        <div class="container">
-            <div class="row">
-                <div class="col-4">
-                    <h1>CARNICERÍA</h1>
-                    <h2 id="meat_screen"></h2>
-                </div>
-                <div class="col-4">
-                    <h1>PESCADERÍA</h1>
-                    <h2 id="fish_screen"></h2>
-                </div>
-                <div class="col-4">
-                    <h1>VERDURERÍA</h1>
-                    <h2 id="vegetable_screen"></h2>
-                </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="categoryName"></h1>
+                <p>tu turno es el </p>
+                <h2 class="ticketNum text-5xl mt-3"></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="text-1xl""">gracias por venir</p>
             </div>
         </div>
     </div>
-
+    <!-- Screen counter -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p>para interactuar con el, tocar la pantalla del iframe y pulsar para incremento:</p>
+                <ul>
+                    <li>a -> carnicería</li>
+                    <li>s -> pescadería</li>
+                    <li>d -> verdulería</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p>para abrir en una página aparte hacer click en el siguiente boton:</p>
+                <button class="btn btn-primary"><a href="./screen.html" target="_blank">click aquí</a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <iframe id="inlineFrameExample" title="Inline Frame Example" width="100%" height="400px" src="./screen.html">
+    </iframe>
     <script src="./javascript.js"></script>
 </body>
 

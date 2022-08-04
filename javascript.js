@@ -9,24 +9,11 @@ let vegetableBtn = document.querySelector("#vegetable");
 let ticketNum = document.querySelector(".ticketNum");
 let categoryName = document.querySelector(".categoryName");
 
-// SCREEN
-
-let meatScreen = document.querySelector("#meat_screen");
-let fishScreen = document.querySelector("#fish_screen");
-let vegetableScreen = document.querySelector("#vegetable_screen");
-
 // button count 
 
 meat_count = 0;
 fish_count = 0;
 vegetable_count = 0;
-
-// screen count
-
-meatScreenCount = 0;
-fishScreenCount = 0;
-vegetableScreenCount = 0;
-
 
 // meat button
 
@@ -66,26 +53,3 @@ function imprSelec(nombre) {
     ventimp.close();
 }
 
-/**
- * SCREEN COUNT
- * añadimos e
- */
-
-window.addEventListener("keydown", function (event) {
-    console.log(event);
-    if (event.key == "a") {
-        console.log("has presionado la tecla a")
-        meatScreenCount++;
-        meatScreen.innerHTML = meatScreenCount;
-    }
-    if (event.key == "s") {
-        console.log("has presionado la tecla a")
-        fishScreenCount++;
-        fishScreen.innerHTML = fishScreenCount;
-    }
-    if (event.key == "d") {
-        console.log("has presionado la tecla a")
-        vegetableScreenCount++;
-        vegetableScreen.innerHTML = vegetableScreenCount;
-    }
-}, false);
